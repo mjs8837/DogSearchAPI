@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Dog Breed Finder</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+    <script src="js/main.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1>Dog Breed Finder</h1>
+    </header>
+
+    <div id="wrapper">
+
+        <div id="input">
+            <div id="widgets">
+                <div class="widgets">
+                    Breed: 
+                    <select id="breed">
+                        <option value="random" selected>Random</option>
+                        <option value="affenpinscher">Affenpinscher</option>
+                        <option value="african">African</option>
+                        <option value="airedale">Airedale</option>
+                        <option value="akita">Akita</option>
+                        <option value="appenzeller">Appenzeller</option>
+                        <option value="basenji">Basenji</option>
+                        <option value="beagle">Beagle</option>
+                        <option value="bluetick">Bluetick</option>
+                        <option value="borzoi">Borzoi</option>
+                        <option value="bouvier">Bouvier</option>
+                        <option value="boxer">Boxer</option>
+                        <option value="brabancon">Brabancon</option>
+                        <option value="briard">Briard</option>
+                        <option value="buhund">Buhund</option>
+                        <option value="bulldog">Bulldog</option>
+                        <option value="bullterrier">Bullterrier</option>
+                        <option value="cairn">Cairn</option>
+                        <option value="cattledog">Cattledog</option>
+                        <option value="chihuahua">Chihuahua</option>
+                        <option value="chow">Chow</option>
+                        <option value="clumber">Clumber</option>
+                        <option value="cockapoo">Cockapoo</option>
+                        <option value="collie">Collie</option>
+                        <option value="coonhound">Coonhound</option>
+                        <option value="corgi">Corgi</option>
+                        <option value="cotondetulear">Cotondetulear</option>
+                        <option value="dachshund">Dachshund</option>
+                        <option value="dalmatian">Dalmatian</option>
+                        <option value="dane">Dane</option>
+                        <option value="deerhound">Deerhound</option>
+                        <option value="dhole">Dhole</option>
+                        <option value="dingo">Dingo</option>
+                        <option value="doberman">Doberman</option>
+                        <option value="elkhound">Elkhound</option>
+                        <option value="entlebucher">Entlebucher</option>
+                        <option value="eskimo">Eskimo</option>
+                        <option value="frise">Frise</option>
+                        <option value="germanshepherd">German Shepherd</option>
+                        <option value="greyhound">Greyhound</option>
+                        <option value="groenendael">Groenendael</option>
+                        <option value="hound">Hound</option>
+                        <option value="husky">Husky</option>
+                        <option value="keeshond">Keeshond</option>
+                        <option value="kelpie">Kelpie</option>
+                        <option value="komondor">Komondor</option>
+                        <option value="kuvasz">Kuvasz</option>
+                        <option value="labrador">Labrador</option>
+                        <option value="leonberg">Leonberg</option>
+                        <option value="lhasa">Lhasa</option>
+                        <option value="malamute">Malamute</option>
+                        <option value="malinois">Malinois</option>
+                        <option value="maltese">Maltese</option>
+                        <option value="mastiff">Mastiff</option>
+                        <option value="mexicanhairless">Mexican Hairless</option>
+                        <option value="mix">Mix</option>
+                        <option value="mountain">Mountain</option>
+                        <option value="newfoundland">Newfoundland</option>
+                        <option value="otterhound">Otterhound</option>
+                        <option value="papillon">Papillon</option>
+                        <option value="pekinese">Pekinese</option>
+                        <option value="pembroke">Pembroke</option>
+                        <option value="pinscher">Pinscher</option>
+                        <option value="pitbull">Pitbull</option>
+                        <option value="pointer">Pointer</option>
+                        <option value="pomeranian">Pomeranian</option>
+                        <option value="poodle">Poodle</option>
+                        <option value="pug">Pug</option>
+                        <option value="puggle">Puggle</option>
+                        <option value="pyrenees">Pyrenees</option>
+                        <option value="redbone">Redbone</option>
+                        <option value="retriever">Retriever</option>
+                        <option value="ridgeback">Ridgeback</option>
+                        <option value="rottweiler">Rottweiler</option>
+                        <option value="saluki">Saluki</option>
+                        <option value="samoyed">Samoyed</option>
+                        <option value="schipperke">Schipperke</option>
+                        <option value="schnauzer">Schnauzer</option>
+                        <option value="setter">Setter</option>
+                        <option value="sheepdog">Sheepdog</option>
+                        <option value="shiba">Shiba</option>
+                        <option value="shihtzu">Shihtzu</option>
+                        <option value="spaniel">Spaniel</option>
+                        <option value="springer">Springer</option>
+                        <option value="stbernard">St. Bernard</option>
+                        <option value="terrier">Terrier</option>
+                        <option value="vizsla">Vizsla</option>
+                        <option value="waterdog">Waterdog</option>
+                        <option value="weimaraner">Weimaraner</option>
+                        <option value="whippet">Whippet</option>
+                        <option value="wolfhound">Wolfhound</option>
+                    </select>
+                </div>
+
+                <!--Have this widget's availability and options change depending on what breed is selected above-->
+                <div class="widgets">
+                    Sub Breed: 
+                    <select id="subBreed">
+                        <option value="none">None</option>
+                    </select>
+                </div>
+
+                <div class="widgets">
+                    Max Results: 
+                    <select id="limit">
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+
+                    </select>
+                </div>
+
+
+                <div class="widgets">
+                    <button type="button" id="search" class="red">Get Dogs!<br />(U・ﻌ・U)</button>
+                </div>
+                <div id="status">Ready to Search!</div>
+            </div>
+        </div>
+
+        <div id="results">
+            <h2>Results</h2>
+            <div id="content">
+                <p>No data yet!</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
